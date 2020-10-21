@@ -4,6 +4,7 @@ import FilterObject from './components/Topics/FilterObject';
 import EvenAndOdd from './components/Topics/EvenAndOdd';
 import Palindrome from './components/Topics/Palindrome';
 import Sum from './components/Topics/Sum';
+import FilterString from './components/Topics/FilterString';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <TopicBrowser />
         <EvenAndOdd />
         <FilterObject />
+        <FilterString />
         <Palindrome />
         <Sum />
       </div>

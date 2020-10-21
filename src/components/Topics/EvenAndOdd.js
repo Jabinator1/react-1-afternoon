@@ -18,7 +18,7 @@ class EvenAndOdd extends Component {
 
     buttonClick = (userInput) => {
         let arr = userInput.split(",")
-        const {evenArray, oddArray} = this.state
+        // const {evenArray, oddArray} = this.state
 
         let even = []
         let odd = []
