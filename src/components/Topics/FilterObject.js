@@ -21,6 +21,7 @@ class FilterObject extends Component {
                   title: 'CEO',
                 }
               ],
+
             userInput: "",
             filteredArray: []
         }
@@ -37,12 +38,9 @@ class FilterObject extends Component {
         let filteredEmployees = []
 
         for (let item in employees) {
-            console.log(item)
-            item.hasOwnPropery(userInput) 
-            ? filteredEmployees.push(item) 
-            : null
+            item.hasOwnPropery(userInput) ? filteredEmployees.push(item) : null
         }
-        this.setState({ filteredEmployees: filteredEmployees})
+        this.setState({filteredEmployees: filteredEmployees})
     }
 
     render() {

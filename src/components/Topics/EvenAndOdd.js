@@ -24,10 +24,9 @@ class EvenAndOdd extends Component {
         let odd = []
 
         for (let item of arr) {
-            console.log(item)
-            item % 2 === 0 ? even.push(item)
+            item % 2 === 0 ? even.push(parseInt(item, 10))
             // this.setState({evenArray: [...evenArray, item]})
-            : odd.push(item)
+            : odd.push(parseInt(item, 10))
             // this.setState({oddArray: [...oddArray, item]})
         }
         this.setState({
@@ -39,7 +38,7 @@ class EvenAndOdd extends Component {
 
     render() {
         return (
-            <div className= "puzzleBox evenAndOddPB">
+            <div className="puzzleBox evenAndOddPB">
                 <h4>Evens and Odds</h4>
                 <input onChange={e => this.inputChange(e.target.value)} className="inputLine"/>
                 <button onClick={() => {this.buttonClick(this.state.userInput)}} className="conformationButton">Split</button>
